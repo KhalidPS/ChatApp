@@ -211,7 +211,7 @@ class Chat : AppCompatActivity() {
                         findViewById<ProgressBar>(R.id.loading).visibility = View.GONE
 
 
-                               viewModelApp.deletePlaceholderImages(date);
+                               viewModelApp.deletePlaceholderImages(date)
 
 
                             Log.e("ks","all multi images: ${it.size}")
