@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "419176296476",
+    "project_id": "chat-58209",
+    "storage_bucket": "chat-58209.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419176296476:android:8e0e5d6dcdee8315262fd9",
+        "android_client_info": {
+          "package_name": "com.k.sekiro.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419176296476-tr1mv9ctcb5ncgp66ve6di6h9n032e3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.k.sekiro.chatapp",
+            "certificate_hash": "ab0718c7be1a84a093e40452e2aebab35d47d7be"
+          }
+        },
+        {
+          "client_id": "419176296476-daqmqdma7tkh0vsimnrcifh2rbhapj6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuHsU7kYdmQXAycyaf6MUFXfhD4dqGd38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419176296476-daqmqdma7tkh0vsimnrcifh2rbhapj6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

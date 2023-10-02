@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImgC"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleICornerImg"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/lastMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="@+id/userNameC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userNameC"
+        app:layout_constraintTop_toBottomOf="@+id/userNameC" />
+
+    <TextView
+        android:id="@+id/userNameC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="user name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/userImgC"
+        app:layout_constraintTop_toTopOf="@+id/userImgC" />
+
+    <TextView
+        android:id="@+id/timeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userNameC" />
+
+    <ImageView
+        android:id="@+id/numberMsgHolder"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/timeMsg"
+        app:layout_constraintStart_toStartOf="@+id/timeMsg"
+        app:layout_constraintTop_toBottomOf="@+id/timeMsg"
+        app:srcCompat="@drawable/bottom_radious" />
+
+    <TextView
+        android:id="@+id/numMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/numberMsgHolder"
+        app:layout_constraintEnd_toEndOf="@+id/numberMsgHolder"
+        app:layout_constraintStart_toStartOf="@+id/numberMsgHolder"
+        app:layout_constraintTop_toTopOf="@+id/numberMsgHolder" />
+
+    <ImageView
+        android:id="@+id/userState"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userImgC"
+        app:layout_constraintEnd_toEndOf="@+id/userImgC"
+        android:background="@drawable/offline_state_shape" />
+</androidx.constraintlayout.widget.ConstraintLayout>

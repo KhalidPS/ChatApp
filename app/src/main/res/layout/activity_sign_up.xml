@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SignUp">
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        android:text="@string/signup"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLayout"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintName"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        app:endIconMode="clear_text"
+        app:errorContentDescription="error here"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:helperText="required*"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/tertiaryColor"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:startIconDrawable="@drawable/ic_person"
+        app:startIconTint="@color/primaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/emailHint"
+        android:padding="0dp"
+        app:endIconMode="clear_text"
+        app:errorContentDescription="error here"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:helperText="required*"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/tertiaryColor"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/nameLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/nameLayout"
+        app:startIconDrawable="@drawable/baseline_email"
+        app:startIconTint="@color/primaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/passwordHint"
+        android:padding="0dp"
+        app:errorContentDescription="error here"
+        app:errorEnabled="true"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:helperText="required*"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="@color/tertiaryColor"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/emailLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailLayout"
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/baseline_lock"
+        app:startIconTint="@color/primaryColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="332dp"
+        android:layout_height="222dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome" />
+</androidx.constraintlayout.widget.ConstraintLayout>

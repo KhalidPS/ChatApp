@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="messages"
+        android:icon="@drawable/message_icon"
+        android:id="@+id/message"
+        android:iconTint="@color/secondaryColor"
+        />
+
+
+    <item
+        android:title="add friend"
+        android:icon="@drawable/ic_person_add"
+        android:id="@+id/addFriend"
+        android:iconTint="@color/secondaryColor"
+        />
+
+
+    <item
+        android:title="profile"
+        android:icon="@drawable/ic_person"
+        android:id="@+id/profile"
+        android:iconTint="@color/secondaryColor"
+        />
+
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/timeRecording"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/timeRecording"
+        app:layout_constraintTop_toBottomOf="@+id/timeRecording"
+        app:srcCompat="@drawable/baseline_mic_24" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="60dp"
+        app:srcCompat= "@drawable/ic_cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/startRecord"
+        app:layout_constraintEnd_toStartOf="@+id/startRecord"
+        app:layout_constraintTop_toTopOf="@+id/startRecord" />
+
+    <ImageView
+        android:id="@+id/sendAudio"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        app:srcCompat= "@drawable/ic_send"
+        app:layout_constraintBottom_toBottomOf="@+id/startRecord"
+        app:layout_constraintStart_toEndOf="@+id/startRecord"
+        app:layout_constraintTop_toTopOf="@+id/startRecord" />
+
+    <TextView
+        android:id="@+id/timeRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView"
+        app:layout_constraintStart_toStartOf="@+id/lottieAnimationView"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/audio_waves" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

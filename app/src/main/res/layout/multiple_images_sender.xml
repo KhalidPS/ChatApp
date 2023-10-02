@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:gravity="end"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagesHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:cardBackgroundColor="@color/primaryColor"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/circleEdge"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/image1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/circleEdge"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image1"
+                app:shapeAppearanceOverlay="@style/circleEdge"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/image4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toStartOf="@+id/image3"
+                app:layout_constraintTop_toBottomOf="@+id/image2"
+                app:shapeAppearanceOverlay="@style/circleEdge"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/image4"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/image1"
+                app:layout_constraintStart_toStartOf="@+id/image2"
+                app:layout_constraintTop_toTopOf="@+id/image2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/msgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="10sp"
+        android:textColor="@color/grey"
+        android:layout_gravity="end"
+        android:text="TextView" />
+
+</LinearLayout>

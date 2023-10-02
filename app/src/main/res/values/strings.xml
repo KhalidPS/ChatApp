@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="login">Login</string>
+    <string name="register">register</string>
+    <string name="passwordHint">password</string>
+    <string name="emailHint">email</string>
+    <string name="or_signup">or if you do not have account you can</string>
+    <string name="saveGoogleToFireStoreSuccessMsg">Data saved successfully</string>
+    <string name="signup">SignUp</string>
+    <string name="hintName">name</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="rememberMe">remember me</string>
+    <string name="accountCreatedMsg">account created, you can sign in now</string>
+    <string name="dismiss">dismiss</string>
+    <string name="timeExpired">The specified time has expired try again"</string>
+    <string name="passwordErrorLength">password should be 8 letters or more</string>
+    <string name="passwordErrorSyntax">password should contains letter and signs like $ and number</string>
+    <string name="NameErrorStarterCharacter">name should start and end with character</string>
+    <string name="emailErrorSyntax">email should be like example@email.com</string>
+    <string name="addFriendById">add friend by id</string>
+    <string name="errorAddFriendByIdMsg">This user not exist check the id , please</string>
+    <string name="successAddFriendByIdMsg">Friend request has been sent successfully</string>
+    <string name="orSelectOneOfList">Or you can add friend from this list</string>
+
+
+    <string name="web_client_id">419176296476-daqmqdma7tkh0vsimnrcifh2rbhapj6u.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_friend_requist_list">FriendRequistList</string>
+    <string name="title_activity_test_tabs">TestTabs</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+</resources>

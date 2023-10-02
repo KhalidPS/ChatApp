@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_friend_request_list" />
+
+    <ImageView
+        android:id="@+id/numberReqHolder"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        android:visibility="gone"
+        app:srcCompat="@drawable/counter_radius" />
+
+    <TextView
+        android:id="@+id/numRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/numberReqHolder"
+        app:layout_constraintEnd_toEndOf="@+id/numberReqHolder"
+        app:layout_constraintStart_toStartOf="@+id/numberReqHolder"
+        app:layout_constraintTop_toTopOf="@+id/numberReqHolder" />
+</androidx.constraintlayout.widget.ConstraintLayout>
